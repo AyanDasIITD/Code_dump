@@ -19,7 +19,7 @@ public class pick_me_both_optimum {
             current_sum += A.get(i);
         }
         max_sum = current_sum;
-        for (int j = 1; j < B; j++) {
+        for (int j = 1; j <= B; j++) {
             i = B - j;
             current_sum += A.get(A.size() - j) - A.get(B - j);
             max_sum = Math.max(max_sum, current_sum);
